@@ -1,3 +1,5 @@
+import SidebarButton from './SidebarButton'
+
 const Sidebar = () => {
     return (
         <div className="h-screen w-64 bg-white">
@@ -10,11 +12,11 @@ const Sidebar = () => {
                     </span>
                 </p>
             </div>
-            <div className="flex flex-col p-2">
-                <a href="/home" className="text-[#35383E]">
-                    Ínicio
-                </a>
-                <a>Minhas tarefas</a>
+            <div className="flex flex-col gap-2 p-2">
+                <SidebarButton variant="unselected">Ínicio</SidebarButton>
+                <SidebarButton variant="unselected">
+                    Minhas tarefas
+                </SidebarButton>
             </div>
         </div>
     )

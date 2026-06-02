@@ -8,11 +8,9 @@ const TaskItem = ({ task, handleTaskCheckboxClick }) => {
         if (task.status === 'done') {
             return 'bg-[#00ADB5] text-[#00ADB5]'
         }
-
         if (task.status === 'in_progress') {
             return 'bg-[#FFAA04] text-[#FFAA04]'
         }
-
         if (task.status === 'not_started') {
             return 'bg-[#35383E] text-[#35383E] bg-opacity-10'
         }
